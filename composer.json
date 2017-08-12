@@ -3,7 +3,7 @@
     "description": "Detect CMS of any website",
     "keywords": ["detect cms", "built with", "wordpress", "joomla", "magento", "laravel"],
     "license": "MIT",
-    "version": "3.0",
+    "version": "3.5",
     "authors": [
         {
             "name": "Pradeep Kumar",
