@@ -68,6 +68,14 @@ class CMS{
             $response['status'] = 'success';
             $response['data']['cms']= 'shopify';
             return $response;
+        }else if(
+            strpos($html, 'Joomla') !== false
+            || strpos($html, 'joomla') !== false
+        )
+        {
+            $response['status'] = 'success';
+            $response['data']['cms']= 'joomla';
+            return $response;
         }
 
         unset($response['data']);

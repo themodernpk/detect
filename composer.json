@@ -3,7 +3,7 @@
     "description": "Detect CMS of any website",
     "keywords": ["detect cms", "built with", "wordpress", "joomla", "magento", "laravel"],
     "license": "DBAD",
-    "version": "1.0",
+    "version": "1.5",
     "authors": [
         {
             "name": "Pradeep Kumar",
