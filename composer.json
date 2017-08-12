@@ -2,7 +2,7 @@
     "name": "webreinvent/detect",
     "description": "Detect CMS of any website",
     "keywords": ["detect cms", "built with", "wordpress", "joomla", "magento", "laravel"],
-    "license": "DBAD",
+    "license": "MIT",
     "version": "1.5",
     "authors": [
         {
@@ -10,14 +10,10 @@
             "email": "webreinvent@gmail.com"
         }
     ],
-    "type": "project",
     "require": {
 		"php": ">=5.4",
         "paquettg/php-html-parser": "*",
         "php-curl-class/php-curl-class": "^7.3"
-    },
-	"require-dev": {
-		"phpunit/phpunit": "5.2.*"
     },
 	"autoload": {
         "psr-4": {
