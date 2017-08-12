@@ -4,26 +4,27 @@ namespace WebReinvent\Detect;
 use \Curl\Curl;
 
 /**
-*  @author webreinvent
-*/
+ *  @author webreinvent
+ */
 class CMS{
 
-   private $url;
+    private $url;
 
-   public function __construct($url)
-   {
-       $this->url = $url;
-   }
-   //---------------------------------------------------
+    public function __construct($url)
+    {
+        $this->url = $url;
+    }
+    //---------------------------------------------------
     public function detect()
     {
         $scrap = $this->scrap();
+
         if($scrap['status'] == 'failed')
         {
             return $scrap;
         }
 
-		return $this->find_cms($scrap['data']);
+        return $this->find_cms($scrap['data']);
     }
     //---------------------------------------------------
 
@@ -48,7 +49,7 @@ class CMS{
     public function find_cms($html)
     {
         $response['data']['url'] = $this->url;
-        if (strpos($html, 'wp-admin') !== false)
+        if (strpos($html, 'wp-content/themes') !== false)
         {
             $response['status'] = 'success';
             $response['data']['cms'] = 'wordpress';
